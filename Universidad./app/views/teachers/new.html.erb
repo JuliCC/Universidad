@@ -1,0 +1,45 @@
+<h1>Ingrese los datos del nuevo profesor</h1>
+
+<%= form_for @teacher do |f| %>
+	<p>
+		<%= f.label :name, "Nombre" %>
+	</p>
+	<p>
+		<%= f.text_field :name %>
+	</p>
+
+	<p>
+		<%= f.label :lastname, "Apellido" %>
+	</p>
+	<p>
+		<%= f.text_field :lastname %>
+	</p>
+
+	<p>
+		<%= f.label :di, "Documento de identidad" %>
+	</p>
+	<p>
+		<%= f.number_field :di %>
+	</p>
+
+	<p>
+		<%= f.label :subject, "Materia" %>
+	</p>
+	<p>
+		<%= f.text_field :subject %>
+	</p>
+
+	<p>
+		<%= f.label :email, "Correo electronico" %>
+	</p>
+	<p>
+		<%= f.text_field :email %>
+	</p>
+
+
+	<p>
+    <%= f.submit %>
+  </p>
+
+
+<% end %>

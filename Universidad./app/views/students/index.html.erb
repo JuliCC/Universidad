@@ -1,0 +1,14 @@
+<h1>Lista de estudiantes</h1>
+
+<%= link_to "Agregar estudiante", new_student_path %>
+
+<ol>
+	<%= @students.each do |student| %>
+		<li>
+			<%= student.name %>
+			<%= link_to "Editar nombre", edit_student_path(student) %>
+			<%= link_to "Eliminar", student_path(student), method: :delete, data: {confirm: "Estas seguro?"} %>
+		</li>
+</ol>
+
+<% end %>

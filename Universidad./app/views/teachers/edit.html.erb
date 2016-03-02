@@ -1,0 +1,14 @@
+<h1>Editar profesor</h1>
+<%= link_to "Ver todos", edit_teacher_path %>
+
+<%= form_for @teacher do |f| %>
+ <p>
+   <%= f.label :name %><br>
+   <%= f.text_field :name %>
+ </p>
+
+
+ <p>
+   <%= f.submit %>
+ </p>
+<% end %>

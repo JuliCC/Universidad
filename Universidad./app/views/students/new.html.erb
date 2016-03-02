@@ -1,0 +1,39 @@
+<h1>Ingrese los datos del nuevo estudiante</h1>
+
+<%= form_for @student do |f| %>
+	<p>
+		<%= f.label :name, "Nombre" %>
+	</p>
+	<p>
+		<%= f.text_field :name %>
+	</p>
+
+	<p>
+		<%= f.label :lastname, "Apellido" %>
+	</p>
+	<p>
+		<%= f.text_field :lastname %>
+	</p>
+
+	<p>
+		<%= f.label :di, "Documento de identidad" %>
+	</p>
+	<p>
+		<%= f.text_field :di %>
+	</p>
+
+
+	<p>
+		<%= f.label :email, "Correo electronico" %>
+	</p>
+	<p>
+		<%= f.text_field :email %>
+	</p>
+
+
+	<p>
+    <%= f.submit %>
+  </p>
+
+
+<% end %>
